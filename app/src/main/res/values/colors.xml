@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleText">#FFFFFF</color>
+
+    <color name="colorPrimary">#33DBA0</color>
+    <color name="colorPrimaryDark">#28b684</color>
+    <color name="colorAccent">#33DBA0</color>
+
+    <color name="mwhite">#f0f0f0</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="loginInputStroke">#000000</color>
+    <color name="textBgShadow">#7F000000</color>
+
+    <color name="viewBackGroundColor">#EBEBEB</color>
+    <color name="orderGray">#7A8E8D</color>
+
+    <color name="sampleText">#F08224</color>
+    <color name="mainMenuText">#9EAAAA</color>
+
+    <color name="wirtePadTitle">#FAF85C</color>
+    <color name="wirtePadBackground">#FBFAAB</color>
+</resources>

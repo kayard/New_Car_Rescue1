@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_item_wihte"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_left_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_right_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_default_avatar"/>
+
+        <TextView
+            android:id="@+id/tv_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="拖车"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <TextView
+            android:id="@+id/tv_order_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="备注"
+            android:textColor="@color/orderGray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_type" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:textColor="@color/orderGray"
+            android:text="状态"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_remarks" />
+
+        <TextView
+            android:id="@+id/tv_order_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="@string/aid_address"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_status" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="时间"
+            android:textSize="16sp"
+            android:maxEms="16"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_type"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line"
+            app:layout_constraintTop_toTopOf="@id/tv_order_type" />
+
+        <TextView
+            android:id="@+id/tv_order_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="客户名称"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_remarks"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line"
+            app:layout_constraintTop_toTopOf="@id/tv_order_remarks" />
+
+        <TextView
+            android:id="@+id/tv_order_accept_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="截止时间"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_status"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line"
+            app:layout_constraintTop_toTopOf="@id/tv_order_status" />
+
+        <TextView
+            android:id="@+id/tv_order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:maxEms="10"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_address_hint"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line"
+            app:layout_constraintTop_toTopOf="@id/tv_order_address_hint" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/orderGray"/>
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_left_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_right_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_default_avatar"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/tv_order_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="搭电"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line1"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <TextView
+            android:id="@+id/tv_order_remarks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="备注"
+            android:textColor="@color/orderGray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line1"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_type1" />
+
+        <TextView
+            android:id="@+id/tv_order_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:textColor="@color/orderGray"
+            android:text="状态"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line1"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_remarks1" />
+
+        <TextView
+            android:id="@+id/tv_order_address_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="@string/aid_address"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/gl_left_line1"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_status1" />
+
+        <TextView
+            android:id="@+id/tv_order_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="时间"
+            android:textSize="16sp"
+            android:maxEms="16"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_type1"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line1"
+            app:layout_constraintTop_toTopOf="@id/tv_order_type1" />
+
+        <TextView
+            android:id="@+id/tv_order_client_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="客户名称"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_remarks1"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line1"
+            app:layout_constraintTop_toTopOf="@id/tv_order_remarks1" />
+
+        <TextView
+            android:id="@+id/tv_order_accept_deadline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="截止时间"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_status1"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line1"
+            app:layout_constraintTop_toTopOf="@id/tv_order_status1" />
+
+        <TextView
+            android:id="@+id/tv_order_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:maxEms="10"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_address_hint1"
+            app:layout_constraintEnd_toStartOf="@id/gl_right_line1"
+            app:layout_constraintTop_toTopOf="@id/tv_order_address_hint1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.kuaijie.new_car_rescue"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //注解引用
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //注解引用
+    compile 'com.android.support:design:26.1.0'
+    //引入控件
+    implementation files('libs/AMap3DMap_6.1.0_AMapNavi_6.0.1_AMapSearch_6.1.0_AMapLocation_3.8.0_20180330.jar')
+    //图片
+    compile 'com.github.bumptech.glide:glide:3.4.0'
+    //网络框架
+    compile 'com.lzy.net:okgo:3.0.4'
+}
